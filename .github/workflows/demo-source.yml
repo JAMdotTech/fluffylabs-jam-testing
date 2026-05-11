@@ -64,7 +64,6 @@ concurrency:
 jobs:
   init:
     name: "Init demo (graymatter → ${{ inputs.target_name }}, ${{ inputs.spec }})"
-    runs-on: [self-hosted, demo]
     steps:
       - uses: actions/checkout@v6
         with:
