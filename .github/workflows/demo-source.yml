@@ -64,6 +64,7 @@ concurrency:
 jobs:
   init:
     name: "Init demo (graymatter → ${{ inputs.target_name }}, ${{ inputs.spec }})"
+    runs-on: ubuntu-latest-m
     steps:
       - uses: actions/checkout@v6
         with:
